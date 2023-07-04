@@ -8,7 +8,6 @@ mongoose.connect(config.mongoose.url, config.mongoose.options).then(() => {
   logger.info('Connected to MongoDB');
   server = app.listen(config.port, () => {
     logger.info(`Listening to port ${config.port}`);
-    console.log(`please open this URL for swagger http://localhost:${config.port}/v1/docs`);
   });
 });
 
